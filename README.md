@@ -176,7 +176,7 @@ FinTradeX
 | stock         |
 | tradeType     |
 | quantity      |
-| exPrice       |
+| exePrice      |
 | time          |
 
 ---

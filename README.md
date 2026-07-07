@@ -64,13 +64,13 @@ This project focuses on **backend engineering**, **transaction consistency**, **
 
 | Category          | Technology                  |
 | ----------------- | --------------------------- |
-| Language          | Java 21                     |
+| Language          | Java 25                     |
 | Framework         | Spring Boot                 |
 | Security          | Spring Security, JWT        |
 | ORM               | Spring Data JPA (Hibernate) |
 | Database          | PostgreSQL                  |
 | Build Tool        | Maven                       |
-| API Documentation | Swagger / OpenAPI           |
+| API Documentation | Swagger                     |
 | Scheduler         | Spring Scheduling           |
 | Market Data       | Twelve Data API             |
 | Utilities         | Lombok                      |
@@ -122,10 +122,6 @@ FinTradeX
 ├── security
 ├── service
 │
-├── docs
-├── postman
-├── screenshots
-│
 ├── pom.xml
 └── README.md
 ```
@@ -138,7 +134,7 @@ FinTradeX
 
 | Field     |
 | --------- |
-| id        |
+| userId    |
 | name      |
 | email     |
 | password  |
@@ -151,11 +147,10 @@ FinTradeX
 
 | Field        |
 | ------------ |
-| id           |
+| stockId      |
 | symbol       |
-| companyName  |
-| marketSymbol |
-| currentPrice |
+| compName     |
+| price        |
 | lastUpdated  |
 
 ---
@@ -164,11 +159,11 @@ FinTradeX
 
 | Field           |
 | --------------- |
-| id              |
+| portId          |
 | user            |
 | stock           |
 | quantity        |
-| averageBuyPrice |
+| avgBuyPrice     |
 
 ---
 
@@ -176,14 +171,13 @@ FinTradeX
 
 | Field         |
 | ------------- |
-| id            |
+| tradeId       |
 | user          |
 | stock         |
 | tradeType     |
 | quantity      |
-| executedPrice |
-| totalAmount   |
-| timestamp     |
+| exPrice       |
+| time          |
 
 ---
 
@@ -342,7 +336,7 @@ Login returns:
 
 ## Prerequisites
 
-* Java 21+
+* Java 25
 * Maven
 * PostgreSQL
 * Git
@@ -352,7 +346,7 @@ Login returns:
 ## Clone Repository
 
 ```bash
-git clone https://github.com/<your-username>/FinTradeX.git
+git clone https://github.com/NikhilKulkani/FinTradeX.git
 cd FinTradeX
 ```
 
